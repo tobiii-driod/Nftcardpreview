@@ -1,0 +1,261 @@
+
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Outfit' sans-serif;
+font-size: 18px;
+}
+
+.container{
+min-height: 100vh;
+background: #0d192b;
+position: relative;
+padding: 3rem 2rem;
+}
+
+.component{
+border-radius: .8rem;
+padding: 1rem;
+background: #14253d;
+}
+
+
+.img-block {
+height: 45vh;
+overflow: hidden;
+border-radius: .5rem;
+position: relative;
+cursor: pointer;
+}
+
+.cube{
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+}
+
+.imgblock::before {
+content: url(../images/icon-view.svg);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+
+background: rgba(5, 175, 170, 0.4);
+opacity: 0;
+-webkit-transition: .6s ease;
+transition: .6s ease;
+}
+
+.img-block:hover::before {
+opacity: 1;
+}
+
+.component-heading {
+text-decoration: none;
+display: inline-block;
+color: white;
+font-size: .9rem;
+margin: 1rem 0 .7rem;
+cursor: pointer;
+-webkit-transition: .4s ease;
+transition: .4s ease;
+}
+
+.component-heading:hover, .component-heading:focus {
+color: #00fff7;
+}
+
+.component-paragraph {
+color: #8bacda;
+font-size: .7rem;
+margin-bottom: .5rem;
+line-height: 1.6;
+}
+
+.component-details {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+
+.component-price {
+color: #00fff7;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+font-size: .7rem;
+letter-spacing: .07rem;
+}
+
+.component-price img {
+margin-right: .3rem;
+width: .5rem;
+}
+
+.component-time {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+color: #8bacda;
+font-size: .7rem;
+}
+
+.component-time img {
+margin-right: .3rem;
+}
+
+.component hr {
+border: 0;
+border-top: 1px solid #2f415b;
+margin: 1rem 0;
+}
+
+.component-footer {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.component-footer--avatar {
+width: 1.4rem;
+height: 1.4rem;
+border-radius: 50%;
+border: 1px solid white;
+margin-right: .7rem;
+}
+
+.component-footer--name {
+font-size: .7rem;
+color: #8bacda;
+}
+
+.component-footer--name a {
+text-decoration: none;
+color: white;
+font-size: .7rem;
+-webkit-transition: .4s ease;
+transition: .4s ease;
+cursor: pointer;
+}
+
+.component-footer--name a:hover {
+color: #00fff7;
+}
+
+.attribution {
+margin-top: 1rem;
+text-align: center;
+font-size: .8rem;
+color: #8bacda;
+}
+
+.attribution a {
+font-size: .8rem;
+text-decoration: none;
+color: #00fff7;
+-webkit-transition: .4s ease;
+transition: .4s ease;
+}
+
+.attribution a:hover, .component__attribution a:focus {
+color: #009994;
+}
+
+@media (min-width: 375px) {
+.component {
+    padding: 1.2rem;
+}
+.component-imgblock {
+    height: 55vh;
+}
+.component-heading {
+    font-size: 1.2rem;
+}
+.component-paragraph {
+    font-size: .8rem;
+    margin-bottom: .9rem;
+}
+.component-footer--name {
+    font-size: .8rem;
+}
+.component-footer--name a {
+    font-size: .8rem;
+}
+}
+
+@media (min-width: 470px) {
+.container {
+    padding: 3rem 2rem;
+}
+}
+
+@media (min-width: 570px) {
+.container {
+    padding: 3rem 3rem;
+}
+.component-imgblock {
+    height: 60vh;
+}
+.component-heading {
+    font-size: 1.4rem;
+}
+.component-paragraph {
+    font-size: 1rem;
+    margin-bottom: .9rem;
+}
+}
+
+@media (min-width: 700px) {
+.component {
+    max-width: 350px;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: 1000px) {
+.component-imgblock {
+    height: 45vh;
+}
+.component-price {
+    font-size: .9rem;
+}
+.component-price img {
+    width: .6rem;
+}
+.component_-time {
+    font-size: .9rem;
+}
+.component-time img {
+    margin-right: .3rem;
+}
+.component-footer--avatar {
+    width: 1.55rem;
+    height: 1.55rem;
+}
+.component-footer--name {
+    font-size: 1rem;
+}
+.component-footer--name a }
